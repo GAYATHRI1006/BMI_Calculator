@@ -1,12 +1,58 @@
-# React + Vite
+# BMI Calculator 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and user-friendly **BMI (Body Mass Index) Calculator** built with **React.js**. This app allows users to enter their height and weight, calculates their BMI, and displays a health status based on the result.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [Live Demo](https://bmi-calculator-sample.vercel.app/)  
 
-## Expanding the ESLint configuration
+## Developed By
+**Gayathri G**  
+GitHub: [GAYATHRI1006](https://github.com/GAYATHRI1006)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Screenshot
+
+![BMI Calculator Screenshot](bmi1.png)  
+![BMI Calculator Screenshot](bmi2.png)  
+![BMI Calculator Screenshot](bmi3.png)  
+
+## Features
+
+- Calculates BMI from user input (height in cm and weight in kg)
+- Categorizes BMI into health ranges:
+  - Underweight
+  - Normal weight
+  - Overweight
+  - Obese
+- Real-time error handling and validation
+- Clear/reset functionality
+- Built with modern React practices using Hooks
+
+## How to Use
+
+1. Enter your **height** in centimeters.
+2. Enter your **weight** in kilograms.
+3. Click on the **Calculate BMI** button.
+4. Your BMI and corresponding health status will be displayed.
+5. Use the **Clear** button to reset all inputs and results.
+
+## Logic Used
+
+- Height is converted from centimeters to meters.
+- BMI is calculated with the formula:
+
+BMI = weight / (height in meters)^2
+
+- Classification:
+- BMI < 18.5 → Underweight
+- 18.5 ≤ BMI < 24.9 → Normal weight
+- 25 ≤ BMI < 29.9 → Overweight
+- BMI ≥ 30 → Obese
+
+- Input validation is done using RegExp: `/^\d+$/` for numeric inputs.
+
+## Technologies Used
+
+- **React.js** (Functional Components + Hooks)
+- **CSS** (Custom styles in `App.css`)
+- **JavaScript** for validation and calculation logic
